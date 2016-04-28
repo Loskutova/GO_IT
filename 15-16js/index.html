@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+	
+function GoogleCallback(jqueryObj, data) {
+
+var resultObj = data.results;
+
+$('.js-result').find('li').remove();
+
+for(var i = 0; i < resultObj.length; i++) {
+console.log(resultObj[i]);
+var item = '<li>'+
+'<a href="'+resultObj[i].url+'" target="_blank">'+resultObj[i].title+'</a>'+
+'<p class="contentBox">'+resultObj[i].content+'</p>'+
+'<p class="urlBox">'+resultObj[i].visibleUrl+'</p>'+
+'</li>';
+
+$('.js-result').append(item);
+}
+}
+
+$(function(){
+function search() {
+var inputTxt = $('.js-input').val();
+
+$.ajax({
+// AJAX-specified URL
+url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q='+inputTxt+'&callback=GoogleCallback&context=?',
+dataType : "jsonp",
+
+// Handle the success event
+success: function (data) {
+// console.log(data);
+}
+});
+}
+
+$('body').on('click', '.js-btn', function(){
+search();
+});
+$(document).keypress(function(e) {
+if(e.which == 13) {
+e.preventDefault();
+search();
+}
+});
+
+});
+	
+</script>
+
+</head>
+<body>
+	
+<div class="doodle">
+	
+	<input type="checkbox" id="play" name="play"/>
+	<label for="play">
+		<img src="http://www.google.com/logos/2012/muybridge12-hp-p.jpg" alt="Play" />
+	</label>
+	
+
+
+
+	<div class="animate">
+		
+		<div class="g"></div>
+		<div class="g"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="l"></div>
+		<div></div>
+		
+		<div class="g"></div>
+		<div class="g"></div>
+		<div class="o"></div>
+		<div class="o play"></div>
+		<div class="g"></div>
+		<div class="l"></div>
+		<div class="e"></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="g"></div>
+		<div></div>
+		<div></div>
+		
+	</div>
+	
+</div>
+
+<form>
+<input type="text" id="search" class="js-input" placeholder="Enter your query here">
+<input type="button" id="button" class="js-btn" value="">
+</form>
+<ul class="js-result"></ul>
+
+
+
+</body>
+</html>
