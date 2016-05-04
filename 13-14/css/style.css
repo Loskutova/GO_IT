@@ -1,0 +1,48 @@
+*{
+	list-style: none;
+}
+.test{
+	width: 600px;
+	margin: 0 auto;
+}
+.title{
+	font-size: 20px;
+}
+
+.modal{
+ position: absolute;
+    width: 350px;
+    height: 180px;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+    background: rgba(236, 228, 228, 0.82);
+    color: #130B0B;
+	border-radius: 15px;
+    display: none;
+    
+   
+}
+
+.cover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0 ,0, 0.5);
+}
+.show{
+	display: block;
+}
+.close-modal{
+	position: relative;
+    padding: 7px;
+    z-index: 10000;
+    float: right;
+    cursor: pointer;
+}
+.result{
+	padding: 70px;
+	font-size: 30px;
+}
