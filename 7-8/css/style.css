@@ -1,0 +1,817 @@
+/* font-family: "LeagueGothicRegular"; */
+@font-face {
+    font-family: "LeagueGothicRegular";
+    src: url("../fonts/LeagueGothicRegular.eot");
+    src: url("../fonts/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LeagueGothicRegular.woff") format("woff"),
+    url("../fonts/LeagueGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+.wrapper{
+	height: 100%;
+	width: 100%;
+}
+.page{
+	background-position: center center;
+    background-size: cover;
+    background-image: url(../image/logo_background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.container {  
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #33252a;
+}
+
+
+
+
+
+header{
+	margin-bottom: 170px;
+}
+header .section1{
+	padding-top: 70px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.menu{
+	overflow: hidden;
+}
+.menu img{
+	clear: both;	
+	float: left;
+}
+
+.menu ul{
+
+    float: right;
+}
+.menu li{
+	list-style: none;
+	padding-left: 65px;
+	display: inline;
+}
+.menu li:first-child{
+	padding-left: 0px;
+}
+.menu li a{
+	font-size: 24px;
+	font-family: "LeagueGothicRegular";
+	text-transform: uppercase;
+	color:white;
+	text-decoration: none;
+}
+.menu li a:hover{
+	
+	border-bottom: 2px solid #edbfff;
+
+}
+.dropdownMenu{
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	left: 25%;
+	display: none;
+}
+.dropdown li {
+ 	position: relative; 
+ 	width: 250px;
+ }
+ .dropdown a{
+ 	text-decoration: none;
+ 	font-size: 24px;
+	font-family: "LeagueGothicRegular";
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+ }
+ .dropdown-inside a{
+ 	background:rgba(0,0,0,0.5); 
+ }
+ .dropdown-top:hover{
+ 	border-radius: 8px 8px 0 0;
+ 
+ 	border-bottom: 2px solid #edbfff;
+ 	background: rgba(0,0,0,0.5); 
+ }
+ul.dropdown li.dropdown-top {
+ 	display: inline;
+ 	float: left;
+	margin: 0 1px 0 0;
+ }
+ ul.dropdown,
+ ul.dropdown-inside {
+ list-style-type: none;
+ padding: 0;
+ z-index: 55;
+ }
+ ul.dropdown-inside {
+ position: absolute;
+ left: -9999px;
+ }
+ .dropdown-inside a{
+ 	border-bottom: 1px solid grey;
+ }
+
+ ul.dropdown li.dropdown-top a {
+ 	padding: 3px 10px 4px;
+ 	display: block;
+ }
+  ul.dropdown a.dropdown-bottom{
+border-radius:0 8px  8px ;
+  }
+
+ ul.dropdown a.dropdown-top:hover { 
+ 	padding: 2px 10px 5px; 
+ 	border-radius: 8px 8px 0 0;
+ }
+ ul.dropdown li.dropdown-top:hover .dropdown-inside {
+ display: block;
+ left: 0;
+ }
+ 
+ .dropdown .dropdown-inside a:hover { 
+ 	border-bottom: 2px solid #edbfff;
+ 	background:rgba(0,0,0,0.7); 
+ }
+
+
+
+
+.blok_slider{
+	height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider_phone{
+		margin-bottom: 170px;
+	width: 100%;
+    height: 37%;
+	background:rgba(0,0,0,0.4);
+	
+}
+.image_ph{
+	margin-left: 8%;
+	text-align: right;
+	display: inline-block;
+margin-top: -2%;
+width: 30%;
+}
+
+.text_slider{
+	display: inline-block;
+	width: 50%;
+position: relative;
+top:-70px;
+left: 0;
+}
+
+.text_slider  span{
+	font-size: 50px;
+	color: white;
+	font-family:"LeagueGothicRegular";
+}
+
+.text_slider .caption{
+	    font-size: 30px;
+line-height: 1.5;
+color: #edbfff;
+font-family:"LeagueGothicRegular";
+}
+
+.text_slider p{
+	font-size: 15px;
+color:white;
+ font-family: "OpenSansLight";
+   text-shadow: 0px 2px 2px rgb( 0, 0, 0 );	
+}
+
+.section2{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#745082+1,33263a+100 */
+background: rgb(116,80,130); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(116,80,130,1) 1%, rgba(51,38,58,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(116,80,130,1) 1%,rgba(51,38,58,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(116,80,130,1) 1%,rgba(51,38,58,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745082', endColorstr='#33263a',GradientType=0 ); /* IE6-9 */
+
+width: 100%;
+}
+
+
+.section2 a{
+	text-decoration: none;
+color:white;
+font-family:"LeagueGothicRegular";
+float: right;
+display: inline-block;
+clear: both;
+
+}
+.section2 a:hover{
+
+text-shadow: 3px 2px 6px rgba(255, 255, 255, 0.85);
+}
+
+.aboutCompany{
+	overflow: hidden;
+width: 960px;
+margin: 0 auto;
+}
+
+.aboutCompany .setting,
+.aboutCompany .news,
+.aboutCompany .music{
+	float: left;
+	width: 23%;
+	padding: 8% 0 8% 8%;
+}
+
+.aboutCompany span{
+	font-size: 28px;
+	line-height: 1.5;
+	color: white;
+	font-family:"LeagueGothicRegular";
+
+}
+
+.aboutCompany p{
+	font-size: 15px;
+color:white;
+ font-family: "OpenSansLight";
+   text-shadow: 0px 2px 2px rgb( 0, 0, 0 );	
+}
+
+
+.aboutCompany .sprite{
+	position: relative;
+	top: 40px;
+	left: -40px;
+	width: 35px;
+	height: 35px;
+	background:url(../img/spritesheet.png)-36px 0 no-repeat;
+}
+
+.news .sprite{
+	background-position: -72px 0;
+}
+
+.music .sprite{
+	background-position: 0px 0;
+}
+.section3 {
+	background:#f9f9f9;
+	
+}
+.section3 .back_sec3{
+
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 55px;
+	
+}
+.section3 .subsec3{
+	margin-left: 38px;
+	float: left;
+	width: 31%;
+	position: absolute;
+}
+
+
+.section3 span{
+	margin-left: 15px;
+	    font-size: 30px;
+color:black;
+font-family:"LeagueGothicRegular";
+}
+
+.section3 .name_sect3{
+	margin-left: 0;
+	 font-size: 30px;
+line-height: 1.5;
+color: #edbfff;
+font-family:"LeagueGothicRegular";
+}
+
+
+.section3 p{
+	font-size: 15px;
+color:black;
+    font-family: "OpenSansLight";
+}
+
+ .section3 .subsec3{
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    position: relative;
+  
+   }
+   .section3 .subsec3::after {
+    content: ''; 
+    position: absolute;
+    right: 20px; bottom: -20px; 
+   border: 20px solid transparent;
+   	border-top: 20px solid white;
+   	 border-right: 20px solid white;
+   }
+
+   .section3 .author_sec{
+   	margin-left: 10px;
+       z-index: 1;
+    position: relative;
+    top: 64px;
+    left: 4px;
+   }
+
+.section3 .subsec_2{
+	    float: right;
+    width: 43%;
+    height: 100%;
+}
+
+
+.items{
+	    float: left;
+    clear: both;
+}
+.items img{
+	clear: both;
+	float: left;
+	margin-top: 2%;
+}
+.section3 p{
+	margin-left: 15px;
+
+    font-size: 15px;
+    color: black;
+    font-family: "OpenSansLight";
+    display: inline-block;
+}
+
+
+.section3 .subsec_2 .paragraph{
+font-family: "OpenSansExtraBold";
+}
+
+.items .text{
+	margin-top: 3%;
+}
+
+.items a{
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+font-family:"LeagueGothicRegular";
+float: right;
+clear:both;
+}
+
+.items a:hover{
+	text-decoration: underline;
+}
+.sponsors{
+  border-top:1px  solid #e6e6e6;
+   border-bottom:1px  solid #e6e6e6;
+	overflow: hidden;
+	clear: both;	
+	margin-top: 6%;
+}
+
+.sponsors a{
+	margin: 2%;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 13%;
+}
+.sponsors a:nth-child(5){
+	margin: 4%;
+}
+.company {
+    overflow: hidden;
+    width: 960px;
+   margin: 0 auto;
+
+	
+}
+
+
+.section4 {
+	background:#ececec;	
+}
+.section4 .box_section{
+	height: 100%;
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+	
+}
+
+
+.box1_sec4 .continue {
+	margin-left: -3px;
+color: #b9b9b9;
+}
+
+.section4 span{
+	color: black;
+	font-size: 24px;
+font-family:"LeagueGothicRegular";
+}
+
+.box1_sec4 .copy{
+	font-size: 12px;
+    font-family: "Georgia";
+  font-style: italic;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+	color: #d0d0d0;
+}
+.section4 p{
+font-size: 15px;
+color:black;
+ font-family: "OpenSansLight";
+ line-height: 1.5;	
+}
+
+
+.section4 .box1_sec4,
+.box2_sec4,
+.box3_sec4{
+	float: left;
+	width: 29%;
+	padding:7% 2%;
+}
+
+
+ footer{
+background-image: url("../image/footer-bottom.jpg");
+	background-size: cover;
+	overflow: hidden;
+	margin:0 auto;
+
+}
+
+
+
+.footer_menu{
+	
+	padding: 2% 0 2% 0;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.footer_menu ul{
+
+    float: left;
+}
+.footer_menu li{
+
+	list-style: none;
+	padding:0 3% 0 3%;
+	display: inline;
+}
+
+.footer_menu li:first-child{
+	padding-left: 0;
+}
+.footer_menu li a{
+
+	font-size: 24px;
+	font-family: "LeagueGothicRegular";
+	color:white;
+	text-decoration: none;
+}
+.footer_menu li a:hover{
+	
+	border-bottom: 2px solid #edbfff;
+
+};
+
+.designer{
+overflow: hidden;
+}
+.footer_menu .designer{
+	overflow: hidden;
+	float: right;
+}
+.footer_menu .designer a {
+	text-decoration: none;
+	font-size: 15px;
+    color: white;
+	font-family: "OpenSansExtraBold";
+
+}
+.footer_menu .designer a:hover{
+	text-decoration: underline;
+}
+.footer_menu p{
+	font-size: 15px;
+	color: white;
+ 	font-family: "OpenSansLight";
+ 	line-height: 1.5;	
+}
+
+@media(max-width: 960px){
+
+header .section1{
+
+	width: 768px;	
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.menu ul{
+	margin-top: 35px; 
+	float: left;
+}
+.blok_slider{
+	width: 768px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.aboutCompany{
+	width: 768px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.section3 .back_sec3{
+	width: 768px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.sponsors a:nth-child(5){
+	margin-top: 5%;
+}
+.company{
+	width: 768px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.section4 .box_section{
+	width: 768px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.footer_menu{
+	width: 768px;
+	padding: 2% 2% 10%;
+}
+.footer_menu .designer{
+	position: relative;
+	left: 5px;
+	top: 44px;
+}
+}
+
+
+@media(max-width: 768px){
+header .section1{
+	width: 480px;	
+	padding-left: 0px;
+	padding-right: 0px;
+}
+header .menu img{
+	padding-right: 164px;
+	padding-left: 164px;
+}
+.dropdownMenu{
+	display: inline-block;
+}
+.menu ul{
+	display: none;
+}
+
+.blok_slider{
+	width: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.text_slider{
+	top:-137px;
+}
+.slider_phone .blok_slider p:last-child{
+	display: none;
+}
+.slider_phone .blok_slider span{
+font-size: 37px;
+}
+
+.slider_phone .blok_slider .caption {
+font-size: 18px;
+}
+.image_ph{
+	margin-left: -7%;
+    margin-top: -3%;
+}
+
+.aboutCompany{
+	width: auto;
+}
+
+.aboutCompany .setting,
+.aboutCompany .news,
+.aboutCompany .music{
+display: block;
+width: 93%;
+padding: 0 0 0 8%;
+
+}
+.section2 a{
+	position: relative;
+	left: -25px;
+	top:0;
+}
+
+.aboutCompany .music{
+	padding-bottom: 35px;
+}
+.section3 .subsec3{
+	display: block;
+	width: 60%;
+}
+.section3 .subsec_2{
+	width: 88%;
+	padding-top: 70px;
+	padding-bottom: 40px;
+		
+}
+.subsec_2 .items a{
+	    position: relative;
+    top: 0;
+    left: -100px;
+}
+.section3 .back_sec3{
+	width: 480px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0;
+}
+.company{
+	width: 480px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.sponsors a{
+	 left: 5%;
+    margin: 6%;
+
+}
+
+.section4 .box_section{
+	width:88%;
+}
+.section4 .box1_sec4, .box2_sec4, .box3_sec4{
+	width: 100%;
+}
+.section4{
+	padding: 40px 0px;
+}
+footer{
+	padding: 5% 0;
+}
+.footer_menu{
+	width: 480px;
+	
+}
+.footer_menu .designer{
+	position: relative;
+	left: -165px;
+	top: 30px;
+}
+.footer_menu li{
+	    padding: 0 2% 0 1%;
+}
+}
+	
+@media (max-width:480px){
+	header .section1{
+	width: 320px;	
+	padding-left: 20px;
+	padding-right: 20px;
+}
+header .menu img{
+	padding-right: 84px;
+	padding-left: 84px;
+}
+.dropdownMenu{
+	left: 10%;
+}
+
+.slider_phone {
+    background: none;
+    margin-bottom: 60px;
+    }
+.text_slider{
+	 top: -70px;
+    left: 97px;
+
+}
+.image_ph img{
+	display: none;
+}
+
+.company{
+	padding: 7% 0;
+}
+
+.aboutCompany{
+	width: 320px;
+	padding: 40px 20px;
+}
+.aboutCompany .setting,
+.aboutCompany .news,
+.aboutCompany .music{
+width: 60%;
+padding: 0 0 0 23%;
+}
+.sponsors a{
+	 left: 20%;
+}
+.section3 .back_sec3{
+	width: 320px;
+}
+.section3 .subsec3{
+	width: 72%;
+}
+.section3 .subsec_2{
+	width: 97%;
+}
+.subsec_2 .items a{
+    left: -8px;
+}
+
+.company{
+	width: 320px;
+}
+
+
+.sponsors a:nth-child(3) {
+ height: 65px;
+ }
+
+.sponsors a:nth-child(4) {
+margin-left:11%;
+ }
+ .sponsors a:nth-child(5) {
+    margin-left: 2%;
+ }
+
+
+.section4 {
+	display: none;
+}
+
+.footer_menu ul{
+display: none;
+}
+.footer_menu .designer{
+	position: relative;
+	left: -190px;
+	top: -5px;
+}
+
+}
