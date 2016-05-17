@@ -183,29 +183,30 @@ border-radius:0 8px  8px ;
 	height: 100%;
     width: 960px;
     margin: 0 auto;
-    position: relative;
+
+
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 .slider_phone{
 		margin-bottom: 170px;
 	width: 100%;
-    height: 37%;
 	background:rgba(0,0,0,0.4);
 	
 }
 .image_ph{
-	margin-left: 8%;
-	text-align: right;
-	display: inline-block;
+	float: right;
 margin-top: -2%;
 width: 30%;
 }
 
 .text_slider{
-	display: inline-block;
+	padding:90px 20px;
 	width: 50%;
-position: relative;
-top:-70px;
-left: 0;
+	float: left;
 }
 
 .text_slider  span{
@@ -261,9 +262,7 @@ width: 960px;
 margin: 0 auto;
 }
 
-.aboutCompany .setting,
-.aboutCompany .news,
-.aboutCompany .music{
+.aboutCompany .subsec_company{
 	float: left;
 	width: 23%;
 	padding: 8% 0 8% 8%;
@@ -383,24 +382,6 @@ color:black;
 	float: left;
 	margin-top: 2%;
 }
-.section3 p{
-	margin-left: 15px;
-
-    font-size: 15px;
-    color: black;
-    font-family: "OpenSansLight";
-    display: inline-block;
-}
-
-
-.section3 .subsec_2 .paragraph{
-font-family: "OpenSansExtraBold";
-}
-
-.items .text{
-	margin-top: 3%;
-}
-
 .items a{
 	text-decoration: none;
 	color: black;
@@ -413,6 +394,24 @@ clear:both;
 .items a:hover{
 	text-decoration: underline;
 }
+.section3 p,a.paragraph{
+	margin-left: 9px;
+    font-size: 15px;
+    color: black;
+    font-family: "OpenSansLight";
+}
+
+
+.section3 .subsec_2 .paragraph {
+font-family: "OpenSansExtraBold";
+}
+
+.items .text{
+	margin-top: 3%;
+	overflow: hidden;
+}
+
+
 .sponsors{
   border-top:1px  solid #e6e6e6;
    border-bottom:1px  solid #e6e6e6;
@@ -422,21 +421,16 @@ clear:both;
 }
 
 .sponsors a{
-	margin: 2%;
-	float: left;
-	position: relative;
-	top: 0;
-	left: 13%;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 2%;
 }
-.sponsors a:nth-child(5){
-	margin: 4%;
-}
-.company {
+
+.company{
+	    text-align: center;
     overflow: hidden;
     width: 960px;
-   margin: 0 auto;
-
-	
+    margin: 0 auto;
 }
 
 
@@ -489,9 +483,10 @@ color:black;
 
  footer{
 background-image: url("../image/footer-bottom.jpg");
-	background-size: cover;
 	overflow: hidden;
 	margin:0 auto;
+	background-size: inherit;
+	background-repeat: no-repeat;
 
 }
 
@@ -512,8 +507,8 @@ background-image: url("../image/footer-bottom.jpg");
 .footer_menu li{
 
 	list-style: none;
-	padding:0 3% 0 3%;
-	display: inline;
+    padding: 0 12px;
+	display: inline-block;
 }
 
 .footer_menu li:first-child{
@@ -527,7 +522,7 @@ background-image: url("../image/footer-bottom.jpg");
 	text-decoration: none;
 }
 .footer_menu li a:hover{
-	
+	height: 100%;
 	border-bottom: 2px solid #edbfff;
 
 };
@@ -573,6 +568,10 @@ header .section1{
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.text_slider{
+	padding:140px 20px;
+	
+}
 .aboutCompany{
 	width: 768px;
 	padding-left: 20px;
@@ -583,9 +582,7 @@ header .section1{
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.sponsors a:nth-child(5){
-	margin-top: 5%;
-}
+
 .company{
 	width: 768px;
 	padding-left: 20px;
@@ -598,13 +595,9 @@ header .section1{
 }
 .footer_menu{
 	width: 768px;
-	padding: 2% 2% 10%;
+
 }
-.footer_menu .designer{
-	position: relative;
-	left: 5px;
-	top: 44px;
-}
+
 }
 
 
@@ -619,7 +612,7 @@ header .menu img{
 	padding-left: 164px;
 }
 .dropdownMenu{
-	display: inline-block;
+	display: block;
 }
 .menu ul{
 	display: none;
@@ -630,9 +623,7 @@ header .menu img{
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.text_slider{
-	top:-137px;
-}
+
 .slider_phone .blok_slider p:last-child{
 	display: none;
 }
@@ -652,9 +643,7 @@ font-size: 18px;
 	width: auto;
 }
 
-.aboutCompany .setting,
-.aboutCompany .news,
-.aboutCompany .music{
+.aboutCompany .subsec_company{
 display: block;
 width: 93%;
 padding: 0 0 0 8%;
@@ -679,11 +668,7 @@ padding: 0 0 0 8%;
 	padding-bottom: 40px;
 		
 }
-.subsec_2 .items a{
-	    position: relative;
-    top: 0;
-    left: -100px;
-}
+
 .section3 .back_sec3{
 	width: 480px;
 	padding-left: 20px;
@@ -711,19 +696,21 @@ padding: 0 0 0 8%;
 	padding: 40px 0px;
 }
 footer{
-	padding: 5% 0;
+	padding: 0;
 }
 .footer_menu{
-	width: 480px;
-	
+	width: 480px;	
+}
+.fooer_menu ul{
+	float: none;
 }
 .footer_menu .designer{
-	position: relative;
-	left: -165px;
-	top: 30px;
+	float: none;
+	display: inline-block;
+	padding: 13px 150px;
 }
 .footer_menu li{
-	    padding: 0 2% 0 1%;
+	    padding: 0 1% 0 1%;
 }
 }
 	
@@ -746,9 +733,7 @@ header .menu img{
     margin-bottom: 60px;
     }
 .text_slider{
-	 top: -70px;
-    left: 97px;
-
+padding: 140px 113px;
 }
 .image_ph img{
 	display: none;
@@ -762,9 +747,7 @@ header .menu img{
 	width: 320px;
 	padding: 40px 20px;
 }
-.aboutCompany .setting,
-.aboutCompany .news,
-.aboutCompany .music{
+.aboutCompany .subsec_company{
 width: 60%;
 padding: 0 0 0 23%;
 }
@@ -780,26 +763,10 @@ padding: 0 0 0 23%;
 .section3 .subsec_2{
 	width: 97%;
 }
-.subsec_2 .items a{
-    left: -8px;
-}
 
 .company{
 	width: 320px;
 }
-
-
-.sponsors a:nth-child(3) {
- height: 65px;
- }
-
-.sponsors a:nth-child(4) {
-margin-left:11%;
- }
- .sponsors a:nth-child(5) {
-    margin-left: 2%;
- }
-
 
 .section4 {
 	display: none;
@@ -807,11 +774,6 @@ margin-left:11%;
 
 .footer_menu ul{
 display: none;
-}
-.footer_menu .designer{
-	position: relative;
-	left: -190px;
-	top: -5px;
 }
 
 }
