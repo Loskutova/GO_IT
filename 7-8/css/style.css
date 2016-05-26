@@ -111,7 +111,7 @@ header .section1{
 	margin: 0 auto;
 	position: relative;
 	top: 0;
-	left: 25%;
+	left: 0;
 	display: none;
 }
 .dropdown li {
@@ -601,7 +601,7 @@ header .section1{
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 860px){
 header .section1{
 	width: 480px;	
 	padding-left: 0px;
@@ -613,10 +613,12 @@ header .menu img{
 }
 .dropdownMenu{
 	display: block;
+	width: 250px;
 }
 .menu ul{
 	display: none;
 }
+
 
 .blok_slider{
 	width: auto;
@@ -635,7 +637,7 @@ font-size: 37px;
 font-size: 18px;
 }
 .image_ph{
-	width: 44%;
+	width: 49%;
 	margin-left: -7%;
     margin-top: -3%;
 }
@@ -715,7 +717,7 @@ footer{
 }
 }
 	
-@media (max-width:480px){
+@media (max-width:540px){
 	header .section1{
 	width: 320px;	
 	padding-left: 20px;
@@ -725,9 +727,7 @@ header .menu img{
 	padding-right: 84px;
 	padding-left: 84px;
 }
-.dropdownMenu{
-	left: 10%;
-}
+
 
 .slider_phone {
     background: none;
