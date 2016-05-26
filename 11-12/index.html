@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jQuery.Carousel.js"></script>
+
+
+
+</head>
+<body>
+
+<style>
+
+
+.content {
+  width: 766px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+* {
+  list-style: none;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.carousel-item {
+  display: block;
+  float: left;
+}
+.carousel-item img {
+  max-width: 600px;
+}
+.carousel-list {
+  position: relative;
+  width: 10000px;
+}
+.carousel-hider {
+  float: left;
+  width: 600px;
+  height: 449px;
+  overflow: hidden;
+  border-radius: 260px;
+}
+.carousel-arrow-left,
+.carousel-arrow-right {
+  display: block;
+  float: left;
+  padding: 2px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+.carousel-arrow-left {
+  margin-right: 25px;
+  color: grey;  
+}
+.carousel-arrow-right {
+  margin-left: 25px;
+  color: grey;  
+}
+
+
+
+
+
+.profile{
+	font-size: 20px;
+ width:250px; 
+    margin: 0 auto; 
+}
+
+.profile span{
+	padding-bottom: 10px;
+	border-bottom:2px solid grey;
+	
+}
+
+
+</style>
+
+
+        <div class="content clearfix">
+            <div class="carousel-list">
+                <div class="carousel-item"><img src="img/1.jpg" alt=""></div>
+                <div class="carousel-item"><img src="img/2.jpg" alt=""></div>
+                <div class="carousel-item"><img src="img/3.jpg" alt=""></div>
+               
+            </div>
+
+
+
+   <script type="text/html"  id='test'>
+            <% for (var i = 0; i < data.length; i++ ) { %>
+                <div class="profile">
+                    <h2 class="title"><%= data[i].title %></h2>
+                    <span class="position"><%= data[i].position %></span>
+                     <p class="vk"><%=data[i].vk %></p>
+                     <p class="contacts"><%= data[i].contacts %></p>
+                    <a href="<%= data[i].email %>"  class="email"><%= data[i].email %></a>
+                    <p><a href="<%= data[i].skype %>" class="skype">Мой skype</a></p>
+                </div>
+            <% }; %>
+        </script>
+
+</div>
+
+
+</body>
+</html>
+
