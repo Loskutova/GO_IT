@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To do list</title>
+	<script data-main="js/app" src="lib/r.js" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+
+	<script type="text/tamplate" id="wrapper-template">
+		<div class="wrapper">
+			<ul class="item-list"></ul>
+			<div class="controlls">
+				<input type="text" class="item-value" autofocus>
+				<button class="item-add">Add</button>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/template" id ="list-template">
+		<% for(var i = 0; i < data.length; i++){ %>
+			<li><%= data[i] %><span data-value="<%= data[i]%>" class="item-delete">X</span></li>
+		<% }; %>
+	</script>
+
+</body>
+</html>
