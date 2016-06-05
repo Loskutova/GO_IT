@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+
+
+}
+
+.wrapper{
+	display: table;
+	height: 100%;
+	overflow: hidden;
+	table-layout: fixed;
+	width: 100%;
+	min-width: 1000px;
+}
+.container{
+	display: table-row;
+	height: 100%;
+}
+.w1{
+	min-height: 100%;
+	margin: 0px auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

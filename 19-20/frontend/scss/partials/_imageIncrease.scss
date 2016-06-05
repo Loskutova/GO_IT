@@ -1,0 +1,50 @@
+
+
+.image_increase{
+	background: $grey;
+	clear: both;
+
+.increasePlus{
+	margin: 0 50px;
+}
+	span{
+		font-family: $font-base--bold;
+		font-size:25px; 
+		padding: 38px 0;
+		color: $white;
+		display: block;
+	}
+	.increase{
+		display: inline-block;
+		    position: relative;
+    padding-bottom: 50px;
+    margin-right: 63px;
+    text-align: center;
+		
+		a{	text-decoration: none;
+			color: $white;
+			text-align: center;
+			font-family: $font-base--bold;
+			font-size: 18px;
+		}
+	}
+}
+ .increase a:hover{
+			color: $yellow;
+		}
+
+.increase:last-child{
+	margin-right:0
+};
+.increase__img{
+	width:100%;
+	margin-bottom:30px
+}
+
+.increase:hover .services__link{color:#f4b60d}
+.increase a .plus-bg{position:absolute;display:none;width:100%;height:260px;background:rgba(44,143,233,.6)}
+.plus-bg i
+{position:absolute;top:0;right:0;bottom:0;left:0;display:block;width:35px;height:35px;margin:auto;color:#fff;font-size:40px}
+.increase a:hover .plus-bg{
+	display: block;
+}

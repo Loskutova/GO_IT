@@ -1,0 +1,103 @@
+.posts_accordion{
+	background: $lightlightgray;
+	width: 100%;
+	height: 100%;	
+	padding: 0 50px;
+	overflow: hidden;
+	.News{
+		margin-bottom: 90px;
+		width: 50%;
+		float: left;
+	}
+.LatestNews{
+	margin-top: 45px;
+	span{
+		font-family:$font-base--bold;
+		font-size: 20px;
+	}
+	span a{
+text-decoration: none;
+color: $grey;
+font-family:$font-base--bold;
+	}
+
+	p{	font-family:$font-base--light;
+		color: $lightgrey;
+		font-size: 15px;
+		a{
+			color:$blue;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+
+	.LatestText{
+		padding-top: 30px;
+	}
+	.news_date{
+	position: relative;
+    top: 100px;
+    left: -16px; 
+    z-index: 2;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    	.news_date_month{
+	background: $blue;
+    color: $white;
+    }
+
+    	.news_date_day{
+    		background: $yellow;
+    		color: $black;
+    }
+}
+   .LatBackImg{
+   	float: left;
+   		position:relative;
+	width:177px;
+	height:153px;
+	margin-left: -19px;
+	margin-right: 30px;
+   img{
+         margin: 0;
+    position: absolute;
+    top: 0px;
+    left: -89px;
+    clip: rect(0px 263px 175px 108px);
+	}
+   }
+
+   .LatestInfo{
+   	float: left;
+   	width: 65%;
+   }
+   .clearNews{
+   	clear: both;
+   }
+   }
+
+
+}
+
+.LatestNews span a:hover{
+	color:$blue;
+}
+
+    	.accordBox{
+		margin-top: -45px;
+	}
+
+	.BackImg{
+		   	float: left;
+   		position:relative;
+   			width:177px;
+	height:153px;
+	img{
+		width: 88%;
+	}
+
+	}
+	

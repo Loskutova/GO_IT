@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "UbuntuRegular";
+    src: url("../fonts/UbuntuRegular/UbuntuRegular.eot");
+    src: url("../fonts/UbuntuRegular/UbuntuRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuRegular/UbuntuRegular.woff") format("woff"),
+    url("../fonts/UbuntuRegular/UbuntuRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "UbuntuLight";
+    src: url("../fonts/UbuntuLight/UbuntuLight.eot");
+    src: url("../fonts/UbuntuLight/UbuntuLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuLight/UbuntuLight.woff") format("woff"),
+    url("../fonts/UbuntuLight/UbuntuLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "UbuntuMedium";
+    src: url("../fonts/UbuntuMedium/UbuntuMedium.eot");
+    src: url("../fonts/UbuntuMedium/UbuntuMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuMedium/UbuntuMedium.woff") format("woff"),
+    url("../fonts/UbuntuMedium/UbuntuMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}//FONT FAMILIES
+$font-base:'UbuntuRegular', Arial, sans-serif;
+$font-base--bold:'UbuntuMedium',Arial, sans-serif;
+$font-base--light:'UbuntuLight',Arial, sans-serif;
+
+//FONT SIZES
+$fontSize-smallest: 12px;
+$fontSize-smaller: 14px;
+$fontSize-small: 16px;
+$fontSize-base: 20px;
+$fontSize-large: 25px;
+$fontSize-larger: 35px;
+$fontSize-largest: 50px;
+$fontSize-xlarg: 60px;
+
+//LINE HEIGHTS
+$lineHeight-tightest: 1.2;
+$lineHeight-tighter: 1.3;
+$lineHeight-tight: 1.4;
+$lineHeight-base: 1.5;
+$lineHeight-loose: 1.6;
+$lineHeight-looser: 1.7;

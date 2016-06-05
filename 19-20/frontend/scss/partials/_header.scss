@@ -1,0 +1,109 @@
+
+.header{
+	background-color:$white;
+	.logo{
+		margin:23px 0;
+		float: left;
+		overflow: hidden;
+	}
+
+	.icons{
+		float: right;
+		overflow: hidden;
+		margin: 47px 0;
+
+		i{
+			padding-left: 20px;
+		}
+	}
+
+}
+
+.logo_menu{
+	background: $grey;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.logo_menu li{
+
+	border-right: 1px solid black;
+	float: left;
+	list-style: none;
+	display: inline-block;
+	background: $grey;
+
+
+	a{ 
+		
+		text-transform: uppercase;
+		text-decoration: none;
+		display: inline-block;
+		color:$white;
+		padding:25px 42px;
+	}
+
+	a:hover{
+		color: $yellow;
+		cursor: pointer;
+	}
+
+ input{
+ 	margin: 10px ;
+ 	padding: 15px 15px;
+ 	border:$black;
+ 	 color:$lightgrey;
+ 	background: #35383c;
+		overflow:hidden;	
+}
+}
+
+.logo_menu li button{
+		    border: 0;
+    padding: 10px 26px;
+    background: #35383c;
+    color: #e9e9ea;
+    position: absolute;
+    top: 16px;
+    left: 167px;
+	}
+input:focus{
+		outline: black;
+	}
+	button:focus{
+		outline:none;
+	}
+
+.logo_menu li:last-child{
+	position: relative;
+	float: right;
+	border-right: 0;
+}
+
+.logo_menu li:first-child{
+	background: $blue;
+}
+
+
+.search_header{
+	display: inline-block;
+}
+
+
+
+.icons{
+.fa{
+	color: $lightgrey;
+}
+.fa:hover{
+	color: $blue;
+	cursor:pointer;
+}
+}
+
+
+
+
+
+

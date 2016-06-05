@@ -1,0 +1,56 @@
+footer{
+	overflow: hidden;
+background: $grey;
+width: 100%;
+
+.menu_footer{
+	padding: 62px 40px;
+}
+span{
+	display: inline-block;
+	margin-bottom: 30px;
+	color: $white;
+	font-family: $font-base--bold;
+}
+
+li{	
+	padding: 11px 0 11px ;
+	border-bottom: 1px solid $grizzle;
+	list-style: none;
+ a{
+text-decoration: none;
+color: $grizzle;
+font-size: 15px;
+padding: 10px;
+
+}
+}
+a:hover{
+	color: $blue;
+}
+li:last-child{
+	border:0;
+}
+.footerInfo{
+	margin-right: 60px;
+	display: inline-block;
+	width: 20%;
+}
+.footer_bottom{
+	overflow: hidden;
+	background: $Grey;
+	padding: 20px 40px;
+	li{	
+		float: left;
+		border: 0;
+		display: inline-block;
+		width: 15%;
+	}
+	li:first-child{
+		width: 30%;
+	}
+	li:last-child{
+		float: right;
+	}
+}
+}

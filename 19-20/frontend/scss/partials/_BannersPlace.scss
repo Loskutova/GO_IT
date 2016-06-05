@@ -1,0 +1,165 @@
+.title {
+	margin-bottom: 40px;
+}
+.title p {
+
+	color: $white;
+}
+.our_service span:hover{
+	color: $yellow;
+}
+.content-block {
+	
+	display: block;
+	overflow: hidden;
+	padding-bottom: 43px;	
+}
+.news {
+	display: block;
+	width: 50%;
+	float: left;
+}
+.news span {
+	display: block;
+	padding-top: 55px;
+	padding-bottom: 40px;
+
+	font-weight: bold;
+}
+.news_box a {
+	display: block;
+	float: right;
+
+	padding-right: 24px;
+	font-weight: bold;
+	
+}
+.news_box a:hover{
+	color: $blue;
+}
+.news_box {
+	position: relative;
+	padding-bottom: 37px;
+}
+.date-month {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: $blue;
+	position: absolute;
+	top: 10px;
+	left: -11px;
+	text-align: center;
+   
+}
+.date-number{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: $yellow;
+	position: absolute;
+	top: 50px;
+	left: -11px;
+	text-align: center;
+
+}
+.comment {
+    display: block;
+    float: none;
+}
+.comment a {
+	display: inline-block;
+	float: none;
+	padding: 0;
+	color: $blue;
+	
+}
+.news_box span {
+	display: inline-block;
+	
+	position: absolute;
+    padding: 0;
+    top: 30px;
+    left: 176px;
+}
+.news_box p{
+	display: block;
+	float: right;
+	position: absolute;
+	left: 177px;
+	top: 52px;
+
+	width: 405px;
+ 
+}
+a.technic {
+	padding-right: 39px;
+}
+.banners {
+	margin-top: 45px;
+	display: block;
+	width: 50%;
+	float: right;
+}
+.banners span{
+	display: block;
+	padding-bottom: 29px;
+	font-size: 20px;
+	font-family: $font-base--bold;
+}
+.plus {
+	display: block;
+	position: relative;
+	background: $white;
+	border: 1px solid $lightgrey;
+	margin: 5px;
+}
+.plus:before{
+	content: '+';
+	display: inline-block;
+	color: $grey;
+	border-right: 1px solid $lightgrey ;
+	padding: 15px 20px;
+}
+.plus span {
+	font-size: 15px;
+	display: inline-block;
+    padding: 15px;
+	color: $grey;
+	font-family: $font-base--bold;
+}
+.accordion p {
+	display: none;
+	
+	font-family: $font-base--light;
+	padding: 10px 0 10px 55px;
+}
+.plus:hover{
+	color: $white;
+	background: $yellow;
+	cursor: pointer;
+}
+.plus:active{
+	color: $white;
+	background: $yellow;
+	cursor: pointer;
+}
+.plus span:hover{
+	color: $white;
+}
+.plus.active span{
+	color: $white;
+}
+.plus:hover:before{
+	content: '-';
+	color: $white;
+	padding-right: 25px;
+}
+.plus.active:before{
+	content: '-';
+	color: $white;
+	padding-right: 25px;
+}
+.accordion .active{
+ background: $yellow;
+}

@@ -1,0 +1,60 @@
+.sectionInfo {
+	    margin-left: 3%;
+    margin-right: 2%;
+    width: 28%;
+	float: left;
+	overflow: hidden;
+	padding: 80px 0px;
+
+.number{
+	width: 30%;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	color: $lightgrey;
+	font-size: 80px;
+}
+
+.numberText{
+	width: 70%;
+	display: inline-block;
+	float: right;
+	overflow: hidden;
+}
+span{	
+	font-family:$font-base--bold;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 30px 0;
+	display:block;
+	color: $grey;
+}
+p{
+
+font-family:$font-base--light;
+	font-size: 15px;
+margin-bottom: 30px;
+}
+a {	font-family:$font-base--bold;
+	font-size: 17px;
+	text-decoration: none;
+	color:$black;
+}
+
+a:hover{
+
+color:$blue;
+}
+
+i{
+	color:$blue;
+}
+
+i:hover{
+	color:$lightgrey;
+}
+}
+
+.sectionInfo:last-child{
+margin-right: 0;
+}
